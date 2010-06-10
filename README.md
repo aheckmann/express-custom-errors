@@ -1,17 +1,19 @@
 # express-custom-errors
 
-Express provides a couple helper methods for handling 500 and 404 errors. These are great. 
+Express provides a couple helper methods for handling 500 and 404 errors. These are great.  
 But what if you want to serve customized views for 403, 502, etc? That's what this plugin is for.
+
+## Getting Started
 
 Create a views subdirectory named errors. 
 
-    `<root>/views/errors`
+    <root>/views/errors
     
 Within the errors directory, create your views the way you do normally, naming them with the status code you want them to handle.
 
-    `<root>/views/errors/502.html.haml`
-    `<root>/views/errors/403.html.haml`
-    `<root>/views/errors/413.ejs.html`
+    <root>/views/errors/502.html.haml
+    <root>/views/errors/403.html.haml
+    <root>/views/errors/413.ejs.html
 
 Include the plugin
 
@@ -21,17 +23,20 @@ That's it!
 
 ## Options
 
-  use(require('path/to/custom-errors').CustomErrors, options)
+    use(require('path/to/custom-errors').CustomErrors, { dir: "errors"})
  
-  - options.dir {string}
+  - dir {string}
     - The directory containing the error views. Must be a subdirectory of `set('views')`.
   
   The options object is also passed into `request.render()` so you can set layouts and locals etc.
   
-    { dir: "errors"
-    , layout: "errors-layout.html.haml"
-    , locals: { name: "Aaron" }
-    }
+    use( 
+      require('path/to/custom-errors').CustomErrors
+    , { dir: "errors"
+      , layout: "errors-layout.html.haml"
+      , locals: { name: "Aaron" }
+      }
+    )
 
 ## Express version
 Compatible with 0.13.0
