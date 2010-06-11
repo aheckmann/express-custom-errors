@@ -1,8 +1,11 @@
-{ "name": "Express Custom Errors"
-, "description": "Serves custom error views for Expressjs"
+{ "name": "express-custom-errors"
+, "description": "Serves custom error views for Expressjs."
 , "version": "0.1.0"
 , "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>"
-, "keywords": ["express", "nodejs", "plugin", "expressjs", "error"]
+, "keywords": ["express", "nodejs", "plugin", "expressjs", "error", "status", "code"]
 , "engines": { "node": ">= 0.1.97" }
 , "directories": { "lib": "./lib"}
+, "bugs": "http://github.com/aheckmann/express-custom-errors/issues"
+, "licenses": [{ "type": "MIT", "url": "http://www.opensource.org/licenses/mit-license.php"}]
+, "main": "./lib/custom-errors"
 }
