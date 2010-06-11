@@ -17,13 +17,13 @@ Within the errors directory, create your views the way you do normally, naming t
 
 Include the plugin
 
-    use(require('path/to/custom-errors').CustomErrors)
+    use(require('path/to/custom-errors'))
     
 That's it!
 
 ## Options
 
-    use(require('path/to/custom-errors').CustomErrors, { dir: "errors"})
+    use(require('path/to/custom-errors'), { dir: "errors"})
  
   - dir {string}
     - The directory containing the error views. Must be a subdirectory of `set('views')`.
@@ -31,7 +31,7 @@ That's it!
   The options object is also passed into `request.render()` so you can set layouts and locals etc.
   
     use( 
-      require('path/to/custom-errors').CustomErrors
+      require('path/to/custom-errors')
     , { dir: "errors"
       , layout: "errors-layout.html.haml"
       , locals: { name: "Aaron" }
