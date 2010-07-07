@@ -1,6 +1,6 @@
 { "name": "express-custom-errors"
 , "description": "Serves custom error views for Expressjs."
-, "version": "0.1.0"
+, "version": "0.1.1"
 , "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>"
 , "keywords": ["express", "nodejs", "plugin", "expressjs", "error", "status", "code"]
 , "engines": { "node": ">= 0.1.97" }
