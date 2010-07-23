@@ -39,7 +39,7 @@ That's it!
     )
 
 ## Express version
-Compatible with 0.13.0+
+Compatible with > 0.13.0 < 1.0.0beta
  
 ## License 
 
